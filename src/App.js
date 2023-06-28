@@ -10,24 +10,51 @@ import Pig from './sounds/pig-grunt.mp3'
 import Roaster from './sounds/roaster.wav'
 import Sheep from './sounds/sheep-bah.mp3'
 
+import CatPic from './animal-pictures/cat.jpg'
+import CowPic from './animal-pictures/cow.jpg'
+import DogPic from './animal-pictures/dog.jpg'
+import DuckPic from './animal-pictures/ducks.jpg'
+import GoatPic from './animal-pictures/goat.jpg'
+import HorsePic from './animal-pictures/horse.jpg'
+import PicPics from './animal-pictures/pigs.jpg'
+import RoasterPic from './animal-pictures/roaster.jpg'
+import SheepPic from './animal-pictures/sheep.jpg'
+import Animals from './animals';
+
+
+
 function App() {
   const data = [
-    { src: Cat, id : 'cat', letter: 'Q' },
-    { src: Cow, id : 'cow', letter: 'W' },
-    { src: Dog, id : 'dog', letter: 'E' },
-    { src: Duck, id : 'duck', letter: 'A' },
-    { src: Goat, id : 'goat', letter: 'S' },
-    { src: Horse, id : 'horse', letter: 'D' },
-    { src: Pig, id : 'pig', letter: 'Z' },
-    { src: Roaster, id : 'roaster', letter: 'X' },
-    { src: Sheep, id : 'sheep', letter: 'C' }
+    { src: Cat, id : '1', letter: 'Cat', pictureSrc: CatPic },
+    { src: Cow, id : '2', letter: 'Cow', pictureSrc:CowPic },
+    { src: Dog, id : '3', letter: 'Dog', pictureSrc:DogPic },
+    { src: Duck, id : '4', letter: 'Duck', pictureSrc:DuckPic },
+    { src: Goat, id : '5', letter: 'Goat', pictureSrc:GoatPic },
+    { src: Horse, id : '6', letter: 'Horse', pictureSrc:HorsePic },
+    { src: Pig, id : '7', letter: 'Pig', pictureSrc: PicPics },
+    { src: Roaster, id : '8', letter: 'Roaster', pictureSrc:RoasterPic },
+    { src: Sheep, id : '9', letter: 'Sheep', pictureSrc:SheepPic }
   ];
+//   const animalData =[
 
+//     {id: 1, src: CatPic},
+//     {id: 2, src: CowPic},
+//     {id: 3, src: DogPic},
+//     {id: 4, src: DuckPic},
+//     {id: 5, src: GoatPic},
+//     {id: 6, src: HorsePic},
+//     {id: 7, src: PicPics},
+//     {id: 8, src: RoasterPic},
+//     {id: 9, src: SheepPic}
+
+// ]
   const [display, setDisplay] = useState('');
 
   const handleDisplay = (display) => {
     setDisplay(display);
   };
+
+
 
   const playAudio = (src) => {
     const audio = new Audio(src);
@@ -37,10 +64,24 @@ function App() {
   return (
     <div id='drum-machine'>
       <div id='display'>
-        <button onClick={() => playAudio(data[0].src)}>Play Audio</button>
+        {data.map((item) => (
+          
+             <Animals 
+             key={item.id} 
+             src={item.src}
+             pictureSrc ={item.pictureSrc}
+             playAudio = {playAudio} 
+             letter = {item.letter}
+             data= {data}
+             />
+        ))}
+        
       </div>
-    </div>
+      
+      </div>
+    
   );
+  
 }
 
 export default App;
