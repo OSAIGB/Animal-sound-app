@@ -45,11 +45,14 @@ function App() {
   return (
     <div className='animal-class'>
       
-      <header><h1>Hi kIDS! </h1>
-      <h2>Click a domestic animal's name <br/> to find out their 
-      sound and image</h2> 
+     
+      <div id='drum-machine'> <header>
+        <p className='kids'><span>Hey kIDS!</span> <br />
+        <span className='click'>Click the name of any of 
+        these <br/><span>Domestic Animal</span> to hear their sound 
+       <br/> and see their images </span></p>
+      
       </header>
-      <div id='drum-machine'>
       <img src={images} style={{width:270}}/>
       <div id='display'>
         {data.map((item) => (
