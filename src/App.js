@@ -9,7 +9,7 @@ import Horse from './sounds/horse.wav'
 import Pig from './sounds/pig-grunt.mp3'
 import Roaster from './sounds/roaster.wav'
 import Sheep from './sounds/sheep-bah.mp3'
-
+import BabyCow from './animal-pictures/cow-smiling.avif'
 import CatPic from './animal-pictures/cat.jpg'
 import CowPic from './animal-pictures/cow.jpg'
 import DogPic from './animal-pictures/dog.jpg'
@@ -35,51 +35,36 @@ function App() {
     { src: Roaster, id : '8', letter: 'Roaster', pictureSrc:RoasterPic },
     { src: Sheep, id : '9', letter: 'Sheep', pictureSrc:SheepPic }
   ];
-//   const animalData =[
 
-//     {id: 1, src: CatPic},
-//     {id: 2, src: CowPic},
-//     {id: 3, src: DogPic},
-//     {id: 4, src: DuckPic},
-//     {id: 5, src: GoatPic},
-//     {id: 6, src: HorsePic},
-//     {id: 7, src: PicPics},
-//     {id: 8, src: RoasterPic},
-//     {id: 9, src: SheepPic}
+  const [images, setImages] = useState(BabyCow)
 
-// ]
-  const [display, setDisplay] = useState('');
-
-  const handleDisplay = (display) => {
-    setDisplay(display);
-  };
-
-
-
-  const playAudio = (src) => {
-    const audio = new Audio(src);
-    audio.play();
-  };
+  const handleImages = (images) =>{
+      setImages(images)
+  }
 
   return (
-    <div id='drum-machine'>
+    <div className='animal-class'>
+      
+      <header><h1>Hi kIDS! </h1>
+      <h2>Click a domestic animal's name <br/> to find out their 
+      sound and image</h2> 
+      </header>
+      <div id='drum-machine'>
+      <img src={images} style={{width:270}}/>
       <div id='display'>
         {data.map((item) => (
           
              <Animals 
-             key={item.id} 
+             id={item.id} 
              src={item.src}
              pictureSrc ={item.pictureSrc}
-             playAudio = {playAudio} 
              letter = {item.letter}
-             data= {data}
+             handleImages = {handleImages}
              />
         ))}
-        
       </div>
-      
       </div>
-    
+      </div>
   );
   
 }

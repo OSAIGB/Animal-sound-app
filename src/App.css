@@ -13,7 +13,7 @@
 #display{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  grid-gap: 20px;
   border-radius: 8px;
 }
 .sound{
@@ -22,24 +22,33 @@
   background-color: rgb(152, 152, 235);
   font-size: 19px;
   color: white;
-}
-.drum-pad{
-  padding: 30px;
-  background-color: black;
-  color: white;
-  font-weight: 600;
-  font-size: 20px;
-border-radius: 4px;
+  width: 80px;
+  height: 40px;
 }
 #drum-machine{
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  
+  flex-direction: column;
+  gap: 50px;
 }
 .animal-data{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+img{
+  outline: solid rgb(152, 152, 235) 10px;
+  border-radius: 4px;
+}
+header{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.animal-class{
+  display: flex;
 }

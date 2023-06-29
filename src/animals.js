@@ -1,27 +1,26 @@
 import './App.css'
+import { useState } from 'react';
 
-
-function Animals({data, pictureSrc, key, letter}){
-console.log(letter)
+function Animals({pictureSrc, id, letter, src, handleImages}){
    
+
+const playAudio = () => {
+    const audio = new Audio(src);
+    handleImages(pictureSrc)
+    audio.play();
+    
+  };
+
     return(
            <div> 
               <div id='animal-data'>
-                <button className='sound' key={key}>
+                <button className='sound' 
+                id={id} 
+                onClick={playAudio}>
                     {letter}
                 </button> 
-                {data.map((objects) => {
-             <img src={objects.pictureSrc} 
-             alt={objects.id} 
-             key={objects.id}/>
-              })}
-              </div> 
-            
-             
+              </div>
         </div>  
     )
-
 }
-
-    
 export default Animals
