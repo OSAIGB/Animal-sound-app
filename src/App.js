@@ -9,18 +9,19 @@ import Horse from './sounds/horse.wav'
 import Pig from './sounds/pig-grunt.mp3'
 import Roaster from './sounds/roaster.wav'
 import Sheep from './sounds/sheep-bah.mp3'
-import BabyCow from './animal-pictures/cow-smiling.avif'
-import CatPic from './animal-pictures/cat.jpg'
-import CowPic from './animal-pictures/cow.jpg'
-import DogPic from './animal-pictures/dog.jpg'
-import DuckPic from './animal-pictures/ducks.jpg'
-import GoatPic from './animal-pictures/goat.jpg'
-import HorsePic from './animal-pictures/horse.jpg'
-import PicPics from './animal-pictures/pigs.jpg'
-import RoasterPic from './animal-pictures/roaster.jpg'
-import SheepPic from './animal-pictures/sheep.jpg'
-import Animals from './animals';
 
+import BabyCow from './animal-pictures/cow-smiling.avif'
+import CatPic from './animal-pictures/cat-white.avif'
+import CowPic from './animal-pictures/cow-field.avif'
+import DogPic from './animal-pictures/dog-husky.avif'
+import DuckPic from './animal-pictures/duck-water.avif'
+import GoatPic from './animal-pictures/goat-white.avif'
+import HorsePic from './animal-pictures/horse-hay.avif'
+import PicPics from './animal-pictures/pig-black.avif'
+import RoasterPic from './animal-pictures/roaster-farm.avif'
+import SheepPic from './animal-pictures/sheep-grass.avif'
+import Animals from './animals';
+import './font.css'
 
 
 function App() {
@@ -46,14 +47,16 @@ function App() {
     <div className='animal-class'>
       
      
-      <div id='drum-machine'> <header>
-        <p className='kids'><span>Hey kIDS!</span> <br />
-        <span className='click'>Click the name of any of 
+      <div id='drum-machine'> 
+      <header>
+        <p className='kids' style={{fontFamily: 'Comic Sans MS'}}>
+          Hello <span id='kids' > kIDS!</span> <br />
+        <span className='click'><span className='click-span'>Click</span> the name of any of 
         these <br/><span>Domestic Animal</span> to hear their sound 
        <br/> and see their images </span></p>
-      
       </header>
-      <img src={images} style={{width:270}}/>
+      <div className='body'>
+          <img src={images} style={{width:250}}/>
       <div id='display'>
         {data.map((item) => (
           
@@ -66,6 +69,8 @@ function App() {
              />
         ))}
       </div>
+      </div>
+    
       </div>
       </div>
   );

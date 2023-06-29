@@ -1,6 +1,6 @@
 import './App.css'
 import { useState } from 'react';
-
+import './font.css'
 function Animals({pictureSrc, id, letter, src, handleImages}){
    
 
@@ -13,10 +13,11 @@ const playAudio = () => {
 
     return(
            <div> 
-              <div id='animal-data'>
+              <div id='animal-data' >
                 <button className='sound' 
                 id={id} 
-                onClick={playAudio}>
+                onClick={playAudio} 
+                style={{ fontFamily:'Comic Sans MS'}}>
                     {letter}
                 </button> 
               </div>

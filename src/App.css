@@ -8,23 +8,27 @@
   flex-direction: column;
   justify-content: center;
   max-width: 500px;
+  
 }
-
+/* #root{
+  background-color: #87CEEB;
+} */
 #display{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  grid-gap: 10px;
   border-radius: 8px;
   padding-top: 20px;
 }
 .sound{
   border-radius: 5px;
-  outline: black solid 3px;
-  background-color: rgb(152, 152, 235);
+  outline: #87CEEB solid 3px;
+  background-color: white;
   font-size: 19px;
-  color: white;
+  color: #f8abb8;
   width: 80px;
   height: 40px;
+  border: none;
 }
 #drum-machine{
   display: flex;
@@ -38,7 +42,7 @@
   justify-content: space-around;
 }
 img{
-  outline: solid rgb(152, 152, 235) 10px;
+  outline: solid #6be06b 10px;
   border-radius: 4px;
 }
 header{
@@ -52,8 +56,38 @@ header{
 .animal-class{
   display: flex;
   flex-direction: column;
+  height: 200vh;
+  background-image: url(https://img.freepik.com/free-vector/empty-banner-template-with-farm-animals_1308-109716.jpg?w=740&t=st=1688079864~exp=1688080464~hmac=3a7e315c5c5338e7107c4fffe78c0986580bfb50c84814f34e35ccfe2a62ab52);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 header{
   font-size: 13px;
 }
+img{
+  position: relative;
+}
+.body{
+  position: relative;
+  bottom: -30px;
+}
+}
+#kids{
+  font-size: 20px;
+  color: #FFC0CB;
+  font-weight: 600;
+}
+.kids{
+  color: #6be06b;
+  font-weight: 600;
+}
+.click{
+  color: black;
+  font-size: 16px;
+}
+.click-span{
+  background-color: #fdd2d9;
+  padding: 2px;
+  border-radius: 3px;
 }
