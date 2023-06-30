@@ -22,7 +22,7 @@ import RoasterPic from './animal-pictures/roaster-farm.avif'
 import SheepPic from './animal-pictures/sheep-grass.avif'
 import Animals from './animals';
 import './font.css'
-
+import Header from './header';
 
 function App() {
   const data = [
@@ -38,25 +38,35 @@ function App() {
   ];
 
   const [images, setImages] = useState(BabyCow)
+const [header, setHeader] = useState(Header)
+
+const changeHeader = (texts) =>{
+  setHeader('This is a ' + texts + '.')
+}
 
   const handleImages = (images) =>{
       setImages(images)
   }
 
+
   return (
     <div className='animal-class'>
-      
-     
       <div id='drum-machine'> 
       <header>
-        <p className='kids' style={{fontFamily: 'Comic Sans MS'}}>
-          Hello <span id='kids' > kIDS!</span> <br />
-        <span className='click'><span className='click-span'>Click</span> the name of any of 
-        these <br/><span>Domestic Animal</span> to hear their sound 
-       <br/> and see their images </span></p>
+    <p className='kids' 
+    style={{fontFamily: 'Comic Sans MS'}}>
+      Hello <span id='kids' > kIDS!</span> <br />
+     
+      </p> 
+      <div className='click' style={{fontFamily:'Comic Sans MS', fontWeight: 600, 
+    fontSize: 30}}>{header}</div>
       </header>
+    
+
       <div className='body'>
-          <img src={images} style={{width:250}}/>
+          <img src={images} 
+          style={{width:250}}/>
+
       <div id='display'>
         {data.map((item) => (
           
@@ -66,6 +76,7 @@ function App() {
              pictureSrc ={item.pictureSrc}
              letter = {item.letter}
              handleImages = {handleImages}
+             texts = {changeHeader}
              />
         ))}
       </div>

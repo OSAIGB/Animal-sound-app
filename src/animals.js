@@ -1,13 +1,14 @@
 import './App.css'
 import { useState } from 'react';
 import './font.css'
-function Animals({pictureSrc, id, letter, src, handleImages}){
+function Animals({pictureSrc, id, letter, src, handleImages,  texts}){
    
 
 const playAudio = () => {
     const audio = new Audio(src);
     handleImages(pictureSrc)
     audio.play();
+    texts(letter)
     
   };
 
