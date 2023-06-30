@@ -1,3 +1,4 @@
+
 .App {
   position: absolute;
   top: 50%;
@@ -10,9 +11,7 @@
   max-width: 500px;
   
 }
-/* #root{
-  background-color: #87CEEB;
-} */
+
 #display{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -22,10 +21,11 @@
 }
 .sound{
   border-radius: 5px;
-  outline: #87CEEB solid 3px;
-  background-color: white;
-  font-size: 19px;
-  color: #f8abb8;
+  outline: #FFC0CB solid 3px;
+  background-color: #fdd2d9;
+  font-size: 21px;
+  font-weight: 600;
+  color: #6be06b;
   width: 80px;
   height: 40px;
   border: none;
@@ -33,8 +33,7 @@
 #drum-machine{
   display: flex;
   align-items: center;
-  height: 100vh;
-  flex-direction: column;
+  gap: 50px;
 }
 .animal-data{
   display: flex;
@@ -51,19 +50,23 @@ header{
 }
 .animal-class{
   display: flex;
+  justify-content: center;
+  height: 100vh;
 }
 @media screen and (max-width : 600px){
 .animal-class{
   display: flex;
   flex-direction: column;
-  height: 200vh;
-  background-image: url(https://img.freepik.com/free-vector/empty-banner-template-with-farm-animals_1308-109716.jpg?w=740&t=st=1688079864~exp=1688080464~hmac=3a7e315c5c5338e7107c4fffe78c0986580bfb50c84814f34e35ccfe2a62ab52);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  height: auto;
+}
+#drum-machine{
+  display: flex;
+flex-direction: column;
+font-size: 25px;
+gap: 10px;
 }
 header{
-  font-size: 13px;
+  font-size: 21px;
 }
 img{
   position: relative;
@@ -72,9 +75,33 @@ img{
   position: relative;
   bottom: -30px;
 }
-}
-#kids{
+.click{
   font-size: 20px;
+  color: #6be06b;
+}
+}
+
+@media (min-width:601px) and (max-width: 1000px){ 
+  #drum-machine{
+    display: flex;
+    flex-direction: row;
+  }
+  header{
+    max-width: 300px;
+  }
+  .click{
+    font-size: 25px;
+  }
+}
+
+@media screen  and (min-width: 1001px) {
+  .click{
+    font-size: 35px;
+  }
+}
+
+#kids{
+  font-size: 60px;
   color: #FFC0CB;
   font-weight: 600;
 }
@@ -82,10 +109,7 @@ img{
   color: #6be06b;
   font-weight: 600;
 }
-.click{
-  color: black;
-  font-size: 16px;
-}
+
 .click-span{
   background-color: #fdd2d9;
   padding: 2px;

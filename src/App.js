@@ -37,6 +37,7 @@ function App() {
     { src: Sheep, id : '9', letter: 'Sheep', pictureSrc:SheepPic }
   ];
 
+
   const [images, setImages] = useState(BabyCow)
 const [header, setHeader] = useState(Header)
 
@@ -47,19 +48,35 @@ const changeHeader = (texts) =>{
   const handleImages = (images) =>{
       setImages(images)
   }
-
+  const backgroundImageStyle = {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url(${images})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    filter: 'blur(6px)', // Apply the blur effect
+    WebkitBackdropFilter: 'blur(10px)', // For Safari
+    backdropFilter: 'blur(10px)', // For modern browsers
+    zIndex: -1,
+  };
 
   return (
-    <div className='animal-class'>
+    <div style={{ position: 'relative', width: '100%', height: '100vh' }}>
+       <div style={backgroundImageStyle} />
+    <div className='animal-class' style={{zIndex:1, position:'relative'}} >
       <div id='drum-machine'> 
       <header>
     <p className='kids' 
-    style={{fontFamily: 'Comic Sans MS'}}>
+    style={{
+      fontFamily: 'Comic Sans MS'}}>
       Hello <span id='kids' > kIDS!</span> <br />
      
       </p> 
       <div className='click' style={{fontFamily:'Comic Sans MS', fontWeight: 600, 
-    fontSize: 30}}>{header}</div>
+   }}>{header}</div>
       </header>
     
 
@@ -78,12 +95,14 @@ const changeHeader = (texts) =>{
              handleImages = {handleImages}
              texts = {changeHeader}
              />
-        ))}
+        ))}  <div className='overlay'>
       </div>
       </div>
-    
+    </div>
       </div>
+   </div>
       </div>
+      
   );
   
 }
