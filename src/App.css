@@ -115,3 +115,13 @@ img{
   padding: 2px;
   border-radius: 3px;
 }
+button.switch-button {
+  width: 60px;
+  background: red;
+  height: 30px;
+}
+.inner-switch{
+  background: #6be06b;
+  height: 20px;
+  width: 20px;
+}
