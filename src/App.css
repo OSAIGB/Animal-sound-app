@@ -26,7 +26,7 @@
   font-size: 21px;
   font-weight: 600;
   color: #6be06b;
-  width: 80px;
+  width: 100px;
   height: 40px;
   border: none;
 }
@@ -37,7 +37,7 @@
   font-size: 21px;
   font-weight: 600;
   color:  #ffd166;
-  width: 80px;
+  width: 100px;
   height: 40px;
   border: none;
 }
@@ -74,6 +74,10 @@ header{
   flex-direction: column;
   height: auto;
 }
+h3.click{
+  font-size: 15px;
+}
+
 #drum-machine{
   display: flex;
 flex-direction: column;
@@ -141,26 +145,27 @@ img{
   }
   .click-wild{
     font-size: 35px;
+    font-weight: 800;
   }
 }
 
 #kids{
-  font-size: 40px;
+  font-size: 30px;
   color: #FFC0CB;
   font-weight: 600;
 }
 #kids-wild{
-  font-size: 40px;
+  font-size: 30px;
   color: #ff6b6b;
   font-weight: 600;
 }
 .kids{
   color: #6be06b;
-  font-weight: 600;
+  font-weight: 800;
 }
 .kids-wild{
   color: #06d6a0;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .click-span{
@@ -170,7 +175,7 @@ img{
 }
 button.switch-button {
   width: 63px;
-  background:#06d6a0;
+  background:rgb(192, 183, 183);
   height: 30px;
   border-radius: 7px;
 }
@@ -179,9 +184,10 @@ button.switch-button {
   height: 20px;
   width: 20px;
 }
-.click{
+h3.click{
   
-  color: #6be06b;
+  color: black;
+  font-weight: 800;
 }
 .click-wild{
   color: #06d6a0;
@@ -196,7 +202,7 @@ button.switch-button {
 .inner-switch {
   width: 20px;
   height: 100%;
-  background-color: #ff6b6b;
+  background-color: black;
   position: absolute;
   top: 0;
   left: 0;
@@ -215,4 +221,9 @@ button.switch-button {
 }
 h3.click{
   padding-left: 20px;
+}
+.animal-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

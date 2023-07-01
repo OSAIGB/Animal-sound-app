@@ -124,6 +124,9 @@ const ChangeWildImages = (wildAnimalImage) =>{
     <div style={{ position: 'relative', width: '100%', height: '100vh' }}>
 
       <div style={backgroundImageStyle} />
+      <div className='animal-body'>
+
+      
          <div className='button-text'>  
           <button className="switch-button" onClick={() => 
         {changeImage();
@@ -154,7 +157,7 @@ const ChangeWildImages = (wildAnimalImage) =>{
           
 
           <div className="body">
-            <img src={images} style={{ width: 250 }} className='dom-images'/>
+            <img src={images} style={{ width: 310 }} className='dom-images'/>
 
             <div id="display">
               {data.map((item) => (
@@ -185,7 +188,7 @@ const ChangeWildImages = (wildAnimalImage) =>{
 
 
  <div className="body">
-   <img src={wildImages} style={{ width: 250 }} className='wild-images' />
+   <img src={wildImages} style={{ width: 310 }} className='wild-images' />
 
    <div id="display">
      {wild.map((items) => (
@@ -203,6 +206,7 @@ const ChangeWildImages = (wildAnimalImage) =>{
 </div>
         )}
       </div>
+    </div>
     </div>
   );
 }
