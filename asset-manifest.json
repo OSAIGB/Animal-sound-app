@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Animal-sound-app/static/css/main.fe64539b.css",
-    "main.js": "/Animal-sound-app/static/js/main.bf0c986c.js",
+    "main.js": "/Animal-sound-app/static/js/main.b3e53b54.js",
     "static/js/787.c419f7a1.chunk.js": "/Animal-sound-app/static/js/787.c419f7a1.chunk.js",
     "static/media/horse.wav": "/Animal-sound-app/static/media/horse.9f0f73ec6179de43bba7.wav",
     "static/media/roaster.wav": "/Animal-sound-app/static/media/roaster.9f953334dc05c6f7f100.wav",
@@ -44,11 +44,11 @@
     "static/media/cat-white.avif": "/Animal-sound-app/static/media/cat-white.46dfa7ff056a1bc223d7.avif",
     "index.html": "/Animal-sound-app/index.html",
     "main.fe64539b.css.map": "/Animal-sound-app/static/css/main.fe64539b.css.map",
-    "main.bf0c986c.js.map": "/Animal-sound-app/static/js/main.bf0c986c.js.map",
+    "main.b3e53b54.js.map": "/Animal-sound-app/static/js/main.b3e53b54.js.map",
     "787.c419f7a1.chunk.js.map": "/Animal-sound-app/static/js/787.c419f7a1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fe64539b.css",
-    "static/js/main.bf0c986c.js"
+    "static/js/main.b3e53b54.js"
   ]
 }
