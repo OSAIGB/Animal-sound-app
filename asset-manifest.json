@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Animal-sound-app/static/css/main.558beba0.css",
-    "main.js": "/Animal-sound-app/static/js/main.a8fac9d2.js",
+    "main.css": "/Animal-sound-app/static/css/main.bb7b1677.css",
+    "main.js": "/Animal-sound-app/static/js/main.9448aa0c.js",
     "static/js/787.c419f7a1.chunk.js": "/Animal-sound-app/static/js/787.c419f7a1.chunk.js",
     "static/media/horse.wav": "/Animal-sound-app/static/media/horse.9f0f73ec6179de43bba7.wav",
     "static/media/roaster.wav": "/Animal-sound-app/static/media/roaster.9f953334dc05c6f7f100.wav",
@@ -10,12 +10,31 @@
     "static/media/ducks1-32839.mp3": "/Animal-sound-app/static/media/ducks1-32839.941e0f4317b138d909d2.mp3",
     "static/media/pig-grunt.mp3": "/Animal-sound-app/static/media/pig-grunt.68fe5eb44694f844ed69.mp3",
     "static/media/cat-meow.wav": "/Animal-sound-app/static/media/cat-meow.47102358e9c476de5c91.wav",
+    "static/media/elephant-trumpet.mp3": "/Animal-sound-app/static/media/elephant-trumpet.428959c16c99afbbe4da.mp3",
+    "static/media/hyena-laugh.mp3": "/Animal-sound-app/static/media/hyena-laugh.44623e47d48c9133f8af.mp3",
+    "static/media/wolf-howl-6310.mp3": "/Animal-sound-app/static/media/wolf-howl-6310.61d5471016493561b07f.mp3",
+    "static/media/monkey-scream.mp3": "/Animal-sound-app/static/media/monkey-scream.0919873d4d4be4864c90.mp3",
+    "static/media/gryffin-cry-6995.mp3": "/Animal-sound-app/static/media/gryffin-cry-6995.5beb2c4ba1230421a7d5.mp3",
     "static/media/comic.ttf": "/Animal-sound-app/static/media/comic.2be4a49a17700938dbc0.ttf",
+    "static/media/owl-hoot.mp3": "/Animal-sound-app/static/media/owl-hoot.0de0fb9bcf61dd132774.mp3",
     "static/media/sheep-bah.mp3": "/Animal-sound-app/static/media/sheep-bah.41280c6371fdaaf56b2e.mp3",
     "static/media/goat-bah.mp3": "/Animal-sound-app/static/media/goat-bah.6148fedb2780bd93f00d.mp3",
+    "static/media/happylion.jpg": "/Animal-sound-app/static/media/happylion.fa2eae888d8688c0d86d.jpg",
+    "static/media/roar-of-a-lion-154719.mp3": "/Animal-sound-app/static/media/roar-of-a-lion-154719.ef9826ef6d35017b9232.mp3",
+    "static/media/hyena.jpeg": "/Animal-sound-app/static/media/hyena.6ee2f3d9d1661aeb51b3.jpeg",
+    "static/media/elephant.jpeg": "/Animal-sound-app/static/media/elephant.916ab1b26b028f581975.jpeg",
+    "static/media/lion.jpeg": "/Animal-sound-app/static/media/lion.30b8eb96324ebcab7ce5.jpeg",
+    "static/media/cougar.mp3": "/Animal-sound-app/static/media/cougar.227e3ab63d15d1c23f1c.mp3",
+    "static/media/owl.jpeg": "/Animal-sound-app/static/media/owl.23564db5a913677d268a.jpeg",
+    "static/media/snake.jpeg": "/Animal-sound-app/static/media/snake.6a611f5c2bab42393d48.jpeg",
+    "static/media/wolf.jpg": "/Animal-sound-app/static/media/wolf.28fec7b4b21b777d1733.jpg",
+    "static/media/monkey.jpeg": "/Animal-sound-app/static/media/monkey.a6cb93732ec23235a458.jpeg",
+    "static/media/snakehiss2.mp3": "/Animal-sound-app/static/media/snakehiss2.a81d5454f773ecb1fb02.mp3",
     "static/media/roaster-farm.avif": "/Animal-sound-app/static/media/roaster-farm.21e45d2f6d1fb9dd8114.avif",
+    "static/media/eagle.jpg": "/Animal-sound-app/static/media/eagle.de73eac0117617a1c5ce.jpg",
     "static/media/dog-husky.avif": "/Animal-sound-app/static/media/dog-husky.a50351a2204827a75845.avif",
     "static/media/cow-field.avif": "/Animal-sound-app/static/media/cow-field.e81c4319fbfb9cfa44a4.avif",
+    "static/media/cougar.jpeg": "/Animal-sound-app/static/media/cougar.aefc762d3abc973d13c0.jpeg",
     "static/media/horse-hay.avif": "/Animal-sound-app/static/media/horse-hay.5341e385d53e5abe0788.avif",
     "static/media/sheep-grass.avif": "/Animal-sound-app/static/media/sheep-grass.903d1680c0fda7e46a89.avif",
     "static/media/goat-white.avif": "/Animal-sound-app/static/media/goat-white.e45eb52daa952a6c5c5c.avif",
@@ -24,12 +43,12 @@
     "static/media/cow-smiling.avif": "/Animal-sound-app/static/media/cow-smiling.faae68565a4e2ecb0131.avif",
     "static/media/cat-white.avif": "/Animal-sound-app/static/media/cat-white.46dfa7ff056a1bc223d7.avif",
     "index.html": "/Animal-sound-app/index.html",
-    "main.558beba0.css.map": "/Animal-sound-app/static/css/main.558beba0.css.map",
-    "main.a8fac9d2.js.map": "/Animal-sound-app/static/js/main.a8fac9d2.js.map",
+    "main.bb7b1677.css.map": "/Animal-sound-app/static/css/main.bb7b1677.css.map",
+    "main.9448aa0c.js.map": "/Animal-sound-app/static/js/main.9448aa0c.js.map",
     "787.c419f7a1.chunk.js.map": "/Animal-sound-app/static/js/787.c419f7a1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.558beba0.css",
-    "static/js/main.a8fac9d2.js"
+    "static/css/main.bb7b1677.css",
+    "static/js/main.9448aa0c.js"
   ]
 }
