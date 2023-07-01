@@ -13,7 +13,10 @@ const playAudio = () => {
   };
 
     return(
+      <div>
+        
            <div> 
+    
               <div id='animal-data' >
                 <button className='sound' 
                 id={id} 
@@ -23,6 +26,7 @@ const playAudio = () => {
                 </button> 
               </div>
         </div>  
+        </div>
     )
 }
 export default Animals

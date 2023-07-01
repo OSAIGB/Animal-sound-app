@@ -30,6 +30,17 @@
   height: 40px;
   border: none;
 }
+.sound-wild{
+  border-radius: 5px;
+  outline: #f9f9f9 solid 3px;
+  background-color: #ff6b6b;
+  font-size: 21px;
+  font-weight: 600;
+  color:  #ffd166;
+  width: 80px;
+  height: 40px;
+  border: none;
+}
 #drum-machine{
   display: flex;
   align-items: center;
@@ -40,8 +51,12 @@
   flex-direction: row;
   justify-content: space-around;
 }
-img{
+img.dom-images{
   outline: solid #6be06b 10px;
+  border-radius: 4px;
+}
+img.wild-images {
+  outline: solid #f9f9f9 10px;
   border-radius: 4px;
 }
 header{
@@ -68,6 +83,9 @@ gap: 10px;
 header{
   font-size: 21px;
 }
+.switch-button{
+  width: 45px;
+}
 img{
   position: relative;
 }
@@ -78,6 +96,26 @@ img{
 .click{
   font-size: 20px;
   color: #6be06b;
+}
+.click-wild{
+  font-size: 20px;
+
+}
+.kids{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.kids-wild{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#kids{
+  font-size: 10px;
+}
+#kids-wild{
+  font-size: 10px;
 }
 }
 
@@ -92,21 +130,36 @@ img{
   .click{
     font-size: 25px;
   }
+  .click-wild{
+    font-size: 25px;
+  }
 }
 
 @media screen  and (min-width: 1001px) {
   .click{
     font-size: 35px;
   }
+  .click-wild{
+    font-size: 35px;
+  }
 }
 
 #kids{
-  font-size: 60px;
+  font-size: 40px;
   color: #FFC0CB;
+  font-weight: 600;
+}
+#kids-wild{
+  font-size: 40px;
+  color: #ff6b6b;
   font-weight: 600;
 }
 .kids{
   color: #6be06b;
+  font-weight: 600;
+}
+.kids-wild{
+  color: #06d6a0;
   font-weight: 600;
 }
 
@@ -116,12 +169,50 @@ img{
   border-radius: 3px;
 }
 button.switch-button {
-  width: 60px;
-  background: red;
+  width: 63px;
+  background:#06d6a0;
   height: 30px;
+  border-radius: 7px;
 }
 .inner-switch{
   background: #6be06b;
   height: 20px;
   width: 20px;
+}
+.click{
+  
+  color: #6be06b;
+}
+.click-wild{
+  color: #06d6a0;
+}
+
+.switch-button {
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.inner-switch {
+  width: 20px;
+  height: 100%;
+  background-color: #ff6b6b;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease;
+  border-radius: 100px;
+}
+
+.switched {
+  transform: translateX(50px);
+}
+
+.button-text{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+h3.click{
+  padding-left: 20px;
 }

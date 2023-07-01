@@ -1,23 +1,27 @@
-function WildAnimals(playAudio, id, letters, pictureSrc){
+import React from 'react';
 
-  // const playAudio = () => {
-  //   const audio = new Audio(src);
-  //   handleImages(pictureSrc)
-  //   audio.play();
-  //   texts(letter)
-    
-  // };
-  return(
-    <div> 
-       <div id='animal-data' >
-         <button className='sound' 
-         id={id} 
-         onClick={playAudio} 
-         style={{ fontFamily:'Comic Sans MS'}}>
-             {letters}
-         </button> 
-       </div>
- </div>  
-)
+function WildAnimals({ texts, ids, letters, pictureSrc, src, handleImages }) {
+ const playAudio = () =>{
+const audio = new Audio(src)
+audio.play()
+handleImages(pictureSrc)
+texts(letters)
+
+
 }
-export default WildAnimals
+ return (
+    <div>
+      <div id='animal-data'>
+        <button
+          className='sound-wild'
+          id={ids}
+          onClick={playAudio}
+          style={{ fontFamily: 'Comic Sans MS' }}>
+          {letters}
+        </button>
+      </div>
+    </div>
+  );
+}
+
+export default WildAnimals;

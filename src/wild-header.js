@@ -1,10 +1,7 @@
 import './App.css'
 import './font.css'
 
-function Header() {
-
-
-
+function WildHeader() {
 return(
     <header>
     <p className='kids-wild' 
@@ -17,4 +14,4 @@ return(
 )
 }
 
-export default Header
+export default WildHeader
