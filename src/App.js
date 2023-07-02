@@ -126,8 +126,7 @@ const ChangeWildImages = (wildAnimalImage) =>{
       <div style={backgroundImageStyle} />
       <div className='animal-body'>
 
-      
-         <div className='button-text'>  
+ <div className='button-text'>  
           <button className="switch-button" onClick={() => 
         {changeImage();
         changeSwitch();
@@ -135,7 +134,7 @@ const ChangeWildImages = (wildAnimalImage) =>{
            <div className={`inner-switch ${isSwitched ? 'switched' : ''}`}></div>
            
           </button> 
-            <h3 className='click'>
+            <h3 className='click-button'>
             <FontAwesomeIcon icon={faArrowLeft} />    Click to see {clickedText ? 'Domestic Animals' : 'Wild Animals'} </h3>
           </div>
     
@@ -144,7 +143,7 @@ const ChangeWildImages = (wildAnimalImage) =>{
         {animalImages ? ( <div id="drum-machine">
           <header>
             <p className="kids" style={{ fontFamily: 'Comic Sans MS' }}>
-              Hello <span id="kids"> Domestic Animal lovers!</span> <br />
+              Hello <span id="kids"> Domestic Animal lovers!</span>
             </p>
             <div
               className="click"
@@ -157,7 +156,7 @@ const ChangeWildImages = (wildAnimalImage) =>{
           
 
           <div className="body">
-            <img src={images} style={{ width: 310 }} className='dom-images'/>
+            <img src={images} style={{ width: 300 }} className='dom-images'/>
 
             <div id="display">
               {data.map((item) => (
@@ -176,7 +175,7 @@ const ChangeWildImages = (wildAnimalImage) =>{
  <div id="drum-machine">
  <header>
    <p className="kids-wild" style={{ fontFamily: 'Comic Sans MS' }}>
-     Hello <span id="kids-wild"> Wild Animal lovers!</span> <br />
+     Hello <span id="kids-wild"> Wild Animal lovers!</span>
    </p>
    <div
      className="click-wild"

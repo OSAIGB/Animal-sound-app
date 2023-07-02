@@ -41,11 +41,7 @@
   height: 40px;
   border: none;
 }
-#drum-machine{
-  display: flex;
-  align-items: center;
-  gap: 50px;
-}
+
 .animal-data{
   display: flex;
   flex-direction: row;
@@ -66,9 +62,9 @@ header{
 .animal-class{
   display: flex;
   justify-content: center;
-  height: 100vh;
 }
 @media screen and (max-width : 600px){
+
 .animal-class{
   display: flex;
   flex-direction: column;
@@ -81,6 +77,7 @@ h3.click{
 #drum-machine{
   display: flex;
 flex-direction: column;
+align-items: center;
 font-size: 25px;
 gap: 10px;
 }
@@ -99,7 +96,7 @@ img{
 }
 .click{
   font-size: 20px;
-  color: #6be06b;
+  
 }
 .click-wild{
   font-size: 20px;
@@ -121,6 +118,14 @@ img{
 #kids-wild{
   font-size: 10px;
 }
+.dom-images{
+  max-height: 280px;
+  width: 300px;
+}
+.wild-images{
+  max-height: 280px;
+  width: 300px;
+}
 }
 
 @media (min-width:601px) and (max-width: 1000px){ 
@@ -131,22 +136,61 @@ img{
   header{
     max-width: 300px;
   }
+  .dom-images{
+    max-height: 290px;
+    width: 300px;
+  }
+  .wild-images{
+    max-height: 290px;
+    width: 300px;
+  }
   .click{
     font-size: 25px;
+    max-width: 310px;
   }
   .click-wild{
     font-size: 25px;
+    max-width: 310px;
+  }
+  #drum-machine{
+    padding-top: 60px;
+  }
+  #drum-machine{
+    display: flex;
+    gap: 50px;
   }
 }
 
 @media screen  and (min-width: 1001px) {
   .click{
     font-size: 35px;
+    max-width: 325px;
   }
   .click-wild{
     font-size: 35px;
     font-weight: 800;
+    max-width: 325px;
   }
+  .animal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .dom-images{
+    max-height: 300px;
+    width: 300px;
+  }
+  .wild-images{
+    max-height: 320px;
+    width: 300px;
+  }
+#drum-machine{
+  padding-top: 60px;
+}
+#drum-machine{
+  display: flex;
+  gap: 50px;
+}
 }
 
 #kids{
@@ -185,12 +229,8 @@ button.switch-button {
   width: 20px;
 }
 h3.click{
-  
   color: black;
   font-weight: 800;
-}
-.click-wild{
-  color: #06d6a0;
 }
 
 .switch-button {
@@ -219,11 +259,21 @@ h3.click{
   flex-direction: row;
   align-items: center;
 }
-h3.click{
+h3.click-button{
   padding-left: 20px;
 }
-.animal-body{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.yes {
+  animation: clickEffect 0.3s linear;
+}
+
+@keyframes clickEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
